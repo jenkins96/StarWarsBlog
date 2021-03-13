@@ -5,7 +5,7 @@ import { Cards } from "../component/Cards.js";
 
 const CardCharactersList = () => {
 	return (
-		<div>
+		<div className="col-4">
 			<Cards />
 		</div>
 	);
@@ -14,8 +14,10 @@ const CardCharactersList = () => {
 export const Home = () => {
 	return (
 		<div className="text-center mt-5">
+			<h1 className="text-danger">Characters</h1>
 			<div className="container testimonial-group">
 				<div className="row text-center">
+					<CardCharactersList />
 					<CardCharactersList />
 					<CardCharactersList />
 					<CardCharactersList />
