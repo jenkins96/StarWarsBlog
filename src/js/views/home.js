@@ -11,6 +11,7 @@ const CardCharactersList = () => {
 };
 
 export const Home = () => {
+	const url = "https://www.swapi.tech/api";
 	return (
 		<div>
 			<div className="text-center mt-5">
