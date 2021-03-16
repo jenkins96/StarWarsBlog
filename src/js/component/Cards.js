@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Cards = props => {
 	return (
@@ -15,9 +16,11 @@ export const Cards = props => {
 						Some quick example text to build on the card title and make up the bulk of the cards content.
 					</p>
 					<div className="d-flex justify-content-between mx-1">
-						<button type="button" className="btn btn-outline-info">
-							Learn more!
-						</button>
+						<Link to="/maininfo">
+							<button type="button" className="btn btn-outline-info">
+								Learn more!
+							</button>
+						</Link>
 						<button type="button" className="btn btn-outline-warning">
 							<i className="far fa-heart" />
 						</button>
