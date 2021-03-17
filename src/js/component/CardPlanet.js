@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
-export const Cards = props => {
+export const CardPlanet = props => {
 	return (
 		<div>
 			<div className="card my-3">
@@ -15,7 +15,7 @@ export const Cards = props => {
 					<h4 className="card-title"> {props.name}</h4>
 					<p className="card-text text-wrap">{props.hair_color}</p>
 					<div className="d-flex justify-content-between mx-1">
-						<Link to="/people">
+						<Link to="/planets">
 							<button type="button" className="btn btn-outline-info">
 								Learn more!
 							</button>
@@ -32,7 +32,7 @@ export const Cards = props => {
 	);
 };
 
-Cards.propTypes = {
+CardPlanet.propTypes = {
 	name: PropTypes.string,
 	hair_color: PropTypes.string
 };
