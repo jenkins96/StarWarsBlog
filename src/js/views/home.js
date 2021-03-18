@@ -21,7 +21,7 @@ const CardPlanetList = () => {
 export const Home = () => {
 	const [people, setPeople] = useState([]);
 	const [planets, setPlanets] = useState([]);
-	const [loading, setLoading] = useState(true);
+	//const [loading, setLoading] = useState(true);
 
 	const urlPeople = "https://swapi.dev/api/people/?format=json";
 	const urlPlanets = "https://swapi.dev/api/planets/?format=json";
@@ -43,6 +43,8 @@ export const Home = () => {
 		fetchPlanets();
 	}, []);
 
+	//console.log("people", people);
+	//console.log("planets", planets);
 	return (
 		<div>
 			<div className="text-center mt-5">

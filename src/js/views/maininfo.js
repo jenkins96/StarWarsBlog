@@ -1,4 +1,4 @@
-import React from "react";
+/*import React from "react";
 import PropTypes from "prop-types";
 // Usar props
 export const MainInfo = props => {
@@ -55,4 +55,4 @@ MainInfo.propTypes = {
 	skinColor: PropTypes.string,
 	height: PropTypes.number,
 	eyeColor: PropTypes.string
-};
+};*/

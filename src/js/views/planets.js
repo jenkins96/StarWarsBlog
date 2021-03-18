@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-// Usar props
+// Modificar props
 export const Planets = props => {
 	return (
 		<div className="container my-3">
