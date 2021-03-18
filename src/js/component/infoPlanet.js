@@ -23,7 +23,7 @@ let initialPlanet = {
 	__v: 0
 };
 
-export const DetailPlannet = props => {
+export const InfoPlanet = props => {
 	const [Planet, setPlanet] = useState(initialPlanet);
 
 	let URL = "https://www.swapi.tech/api/";
@@ -45,7 +45,7 @@ export const DetailPlannet = props => {
 			.catch(err => console.error(err));
 	}
 
-    // Calling last function
+	// Calling last function
 	useEffect(() => {
 		fnPlanet();
 	}, []);
@@ -55,21 +55,7 @@ export const DetailPlannet = props => {
 			<div className="jumbotron">
 				<div className="row row-cols-2">
 					<div className="col-5">
-						<svg
-							className="bd-placeholder-img card-img-top"
-							width="100%"
-							height="100%"
-							xmlns="http://www.w3.org/2000/svg"
-							preserveAspectRatio="xMidYMid slice"
-							focusable="false"
-							role="img"
-							aria-label="Placeholder: Image cap">
-							<title>Placeholder</title>
-							<rect width="100%" height="100%" fill="#868e96" />
-							<text x="35%" y="50%" fill="#dee2e6" dy=".3em">
-								Image cap
-							</text>
-						</svg>
+						<img src="https://picsum.photos/340/260" alt="Dummy Image" />
 					</div>
 					<div className="col-7">
 						<h1 className="text-danger">{Planet.properties.name}</h1>
@@ -112,6 +98,6 @@ export const DetailPlannet = props => {
 };
 
 // Props Validation
-DetailPlannet.propTypes = {
+InfoPlanet.propTypes = {
 	PlanetID: PropType.string
 };

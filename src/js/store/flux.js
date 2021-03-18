@@ -13,11 +13,11 @@ const getState = ({ getStore, getActions, setStore }) => {
 				let URL = "https://www.swapi.tech/api/";
 
 				async function fnPeopleList() {
-                    //const result = await fetch(URL + "people/")
-                    // "https://swapi.dev/api/people/?format=json"
-                    // "https://raw.githubusercontent.com/johmstone/files/main/peopleresponse.json"
+					//const result = await fetch(URL + "people/")
+					// "https://swapi.dev/api/people/?format=json"
+					// "https://raw.githubusercontent.com/johmstone/files/main/peopleresponse.json"
 					const result = await fetch(
-						"https://swapi.dev/api/people/?format=json"
+						"https://raw.githubusercontent.com/johmstone/files/main/peopleresponse.json"
 					)
 						.then(res => {
 							if (res.status == 200) {
@@ -33,11 +33,11 @@ const getState = ({ getStore, getActions, setStore }) => {
 				}
 
 				async function fnPLanetsList() {
-                    //const result = await fetch(URL + "people/")
-                    // "https://swapi.dev/api/planets/?format=json"
-                    // "https://raw.githubusercontent.com/johmstone/files/main/JSONResultPlanets.json"
+					//const result = await fetch(URL + "people/")
+					// "https://swapi.dev/api/planets/?format=json"
+					// "https://raw.githubusercontent.com/johmstone/files/main/JSONResultPlanets.json"
 					const result = await fetch(
-						 "https://swapi.dev/api/planets/?format=json"
+						"https://raw.githubusercontent.com/johmstone/files/main/JSONResultPlanets.json"
 					)
 						.then(res => {
 							if (res.status == 200) {

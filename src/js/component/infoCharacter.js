@@ -23,7 +23,7 @@ let initialPeople = {
 	__v: 0
 };
 
-export const DetailCharacters = props => {
+export const InfoCharacter = props => {
 	const [People, setPeople] = useState(initialPeople); // initial state
 
 	let URL = "https://www.swapi.tech/api/";
@@ -44,7 +44,7 @@ export const DetailCharacters = props => {
 			.catch(err => console.error(err));
 		//console.log(response);
 	}
-    // Calling last function once
+	// Calling last function once
 	useEffect(() => {
 		fnPeople();
 	}, []);
@@ -54,21 +54,7 @@ export const DetailCharacters = props => {
 			<div className="jumbotron">
 				<div className="row row-cols-2">
 					<div className="col-5">
-						<svg
-							className="bd-placeholder-img card-img-top"
-							width="100%"
-							height="100%"
-							xmlns="http://www.w3.org/2000/svg"
-							preserveAspectRatio="xMidYMid slice"
-							focusable="false"
-							role="img"
-							aria-label="Placeholder: Image cap">
-							<title>Placeholder</title>
-							<rect width="100%" height="100%" fill="#868e96" />
-							<text x="35%" y="50%" fill="#dee2e6" dy=".3em">
-								Image cap
-							</text>
-						</svg>
+						<img src="https://picsum.photos/340/260" alt="" />
 					</div>
 					<div className="col-7">
 						<h1 className="text-danger">{People.properties.name}</h1>
@@ -82,7 +68,7 @@ export const DetailCharacters = props => {
 						</p>
 					</div>
 				</div>
-				<hr />
+				<hr className="text-danger" />
 				<div className="row">
 					<table className="table table-responsive table-borderless">
 						<tbody>
@@ -111,6 +97,6 @@ export const DetailCharacters = props => {
 };
 
 // Pros validation
-DetailCharacters.propTypes = {
+InfoCharacter.propTypes = {
 	PeopleID: PropType.string
 };

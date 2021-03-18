@@ -48,47 +48,33 @@ export const CardCharacters = props => {
 				}
 			})
 			.then(response => {
-                // With the response we are going to update with our setter
+				// With the response we are going to update with our setter
 				setPeople(response.result);
 			})
 			.catch(err => console.error(err));
 		//console.log(response);
 	}
 
-    // Calling last function once
+	// Calling last function once
 	useEffect(() => {
 		fnPeople();
 	}, []);
 
 	return (
 		<div className="card m-3" style={cardStyle}>
-			<svg
-				className="bd-placeholder-img card-img-top"
-				width="100%"
-				height="180"
-				xmlns="http://www.w3.org/2000/svg"
-				preserveAspectRatio="xMidYMid slice"
-				focusable="false"
-				role="img"
-				aria-label="Placeholder: Image cap">
-				<title>Placeholder</title>
-				<rect width="100%" height="100%" fill="#868e96" />
-				<text x="35%" y="50%" fill="#dee2e6" dy=".3em">
-					Image cap
-				</text>
-			</svg>
+			<img src="https://picsum.photos/285/180" alt="Dummy Image" />
 			<div className="card-body">
 				<h5 className="card-title">{People.properties.name}</h5>
 				<p className="card-text text-wrap m-0">Gender: {People.properties.gender}</p>
 				<p className="card-text text-wrap m-0">Hair Color: {People.properties.hair_color}</p>
 				<p className="card-text text-wrap m-0">Eye-Color: {People.properties.eye_color}</p>
 				<div className="mt-2">
-					<Link to={ detailURL } className="btn btn-outline-primary text-primary">
+					<Link to={detailURL} className="btn btn-outline-primary text-primary">
 						Learn more!
 					</Link>
 					<a
-                        className="btn btn-outline-warning text-warning float-right"
-                        // onClick function
+						className="btn btn-outline-warning text-warning float-right"
+						// onClick function
 						onClick={() => actions.changeFavoritePeople(props.PeopleID)}>
 						{store.people.map((item, i) => {
 							if (item.uid === props.PeopleID) {

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { DropdownMenu } from "./dropdownMenu.js"
+import { DropdownMenu } from "./dropdownMenu.js";
 
 export const Navbar = () => {
 	return (
@@ -10,8 +10,7 @@ export const Navbar = () => {
 					<img src="https://img.icons8.com/color/48/000000/star-wars.png" alt="" />
 				</span>
 			</Link>
-            <DropdownMenu />
-
+			<DropdownMenu />
 		</nav>
 	);
 };

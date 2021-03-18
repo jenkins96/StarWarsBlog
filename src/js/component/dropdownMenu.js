@@ -3,7 +3,7 @@ import React, { Component, useContext } from "react";
 import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
 
-export const dropdownMenu = props => {
+export const DropdownMenu = props => {
 	const { store, actions } = useContext(Context);
 
 	const Counter = () => {
@@ -19,7 +19,7 @@ export const dropdownMenu = props => {
 			}
 		});
 
-		return <span className="mr-1 p-1 bg-light text-body rounded">{ y }</span>;
+		return <span className="mr-1 p-1 bg-light text-body rounded">{y}</span>;
 	};
 	return (
 		<div className="ml-auto">
