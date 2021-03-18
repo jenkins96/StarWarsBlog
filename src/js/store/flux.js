@@ -1,18 +1,9 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
-			demo: [
-				{
-					title: "FIRST",
-					background: "white",
-					initial: "white"
-				},
-				{
-					title: "SECOND",
-					background: "white",
-					initial: "white"
-				}
-			]
+			store: {
+				people: []
+			}
 		},
 		actions: {
 			// Use getActions to call a function within a fuction
@@ -20,7 +11,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 				getActions().changeColor(0, "green");
 			},
 			loadSomeData: () => {
-				/**
+				/*
 					fetch().then().then(data => setStore({ "foo": data.bar }))
 				*/
 			},
