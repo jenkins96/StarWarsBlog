@@ -1,6 +1,6 @@
 import React, { Component, useEffect, useState } from "react";
 import PropType from "prop-types";
-
+// Changed to flexbox
 // Initial information
 let initialPlanet = {
 	properties: {
