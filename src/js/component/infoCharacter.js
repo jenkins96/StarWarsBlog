@@ -68,28 +68,32 @@ export const InfoCharacter = props => {
 						</p>
 					</div>
 				</div>
-				<hr className="text-danger" />
-				<div className="row">
-					<table className="table table-responsive table-borderless">
-						<tbody>
-							<tr className="text-danger font-weight-bold">
-								<td>Name</td>
-								<td className="text-center">Birth Year</td>
-								<td className="text-center">Gender</td>
-								<td className="text-center">Height</td>
-								<td className="text-center">Skin Color</td>
-								<td className="text-center">Eye Color</td>
-							</tr>
-							<tr>
-								<td className="text-center">{People.properties.name}</td>
-								<td className="text-center">{People.properties.birth_year}</td>
-								<td className="text-center">{People.properties.gender}</td>
-								<td className="text-center">{People.properties.height}</td>
-								<td className="text-center">{People.properties.skin_color}</td>
-								<td className="text-center">{People.properties.eye_color}</td>
-							</tr>
-						</tbody>
-					</table>
+				<hr />
+				<div className="row d-flex justify-content-around text-danger">
+					<div className="col-md-2">
+						<h4>Name</h4>
+						<p>{People.properties.name}</p>
+					</div>
+					<div className="col-md-2">
+						<h4>Birth Year</h4>
+						<p>{People.properties.birth_year}</p>
+					</div>
+					<div className="col-md-2">
+						<h4>Gender</h4>
+						<p>{People.properties.gender}</p>
+					</div>
+					<div className="col-md-2">
+						<h4>Height</h4>
+						<p>{People.properties.height}</p>
+					</div>
+					<div className="col-md-2">
+						<h4>Skin Color</h4>
+						<p>{People.properties.skin_color}</p>
+					</div>
+					<div className="col-md-2">
+						<h4>Eye Color</h4>
+						<p>{People.properties.eye_color}</p>
+					</div>
 				</div>
 			</div>
 		</div>

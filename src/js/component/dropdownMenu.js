@@ -25,7 +25,7 @@ export const DropdownMenu = props => {
 		<div className="ml-auto">
 			<div className="dropdown">
 				<button
-					className="btn btn-secondary dropdown-toggle"
+					className="btn btn-primary dropdown-toggle"
 					type="button"
 					id="dropdownMenuButton"
 					data-toggle="dropdown"

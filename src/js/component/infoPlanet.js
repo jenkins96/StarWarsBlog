@@ -70,27 +70,27 @@ export const InfoPlanet = props => {
 					</div>
 				</div>
 				<hr />
-				<div className="row">
-					<table className="table table-responsive table-borderless">
-						<tbody>
-							<tr className="text-danger font-weight-bold">
-								<td>Name</td>
-								<td className="text-center">Climate</td>
-								<td className="text-center">Population</td>
-								<td className="text-center">Orbital Period</td>
-								<td className="text-center">Rotation Period</td>
-								<td className="text-center">Diameter</td>
-							</tr>
-							<tr>
-								<td className="text-center">{Planet.properties.name}</td>
-								<td className="text-center">{Planet.properties.climate}</td>
-								<td className="text-center">{Planet.properties.population}</td>
-								<td className="text-center">{Planet.properties.orbital_period}</td>
-								<td className="text-center">{Planet.properties.rotation_period}</td>
-								<td className="text-center">{Planet.properties.diameter}</td>
-							</tr>
-						</tbody>
-					</table>
+				<div className="row d-flex justify-content-around text-danger">
+					<div className="col-md-2">
+						<h4>Climate</h4>
+						<p>{Planet.properties.climate}</p>
+					</div>
+					<div className="col-md-2">
+						<h4>Population</h4>
+						<p>{Planet.properties.population}</p>
+					</div>
+					<div className="col-md-2">
+						<h4>Orbital Period</h4>
+						<p>{Planet.properties.orbital_period}</p>
+					</div>
+					<div className="col-md-2">
+						<h4>Rotation Period</h4>
+						<p>{Planet.properties.rotation_period}</p>
+					</div>
+					<div className="col-md-2">
+						<h4>Diameter</h4>
+						<p>{Planet.properties.diameter}</p>
+					</div>
 				</div>
 			</div>
 		</div>
