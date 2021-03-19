@@ -1,6 +1,6 @@
 import React, { Component, useEffect, useState } from "react";
 import PropType from "prop-types";
-// Changed to flexbox
+
 // Initial information
 let initialPeople = {
 	properties: {
@@ -29,9 +29,6 @@ export const InfoCharacter = props => {
 	let URL = "https://www.swapi.tech/api/";
 	async function fnPeople() {
 		const response = await fetch(URL + "people/" + props.PeopleID)
-			// const response = await fetch(
-			// 	"https://raw.githubusercontent.com/johmstone/files/main/JSONResultPeopleDetail.json"
-			// )
 			.then(res => {
 				if (res.status == 200) {
 					return res.json();

@@ -1,6 +1,6 @@
 import React, { Component, useEffect, useState } from "react";
 import PropType from "prop-types";
-// Changed to flexbox
+
 // Initial information
 let initialPlanet = {
 	properties: {
@@ -30,9 +30,6 @@ export const InfoPlanet = props => {
 
 	async function fnPlanet() {
 		const response = await fetch(URL + "planets/" + props.PlanetID)
-			// const response = await fetch(
-			// 	"https://raw.githubusercontent.com/johmstone/files/main/JSONResultPlanetDetail.json"
-			// )
 			.then(res => {
 				if (res.status == 200) {
 					return res.json();
